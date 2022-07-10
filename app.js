@@ -66,7 +66,9 @@ const client = new Client({
         '--disable-gpu'
       ],
     },
-    authStrategy: new LocalAuth()
+    authStrategy: new LocalAuth({
+    dataPath: 'D://sessionnueva'
+  })
   });
 
 client.initialize();
